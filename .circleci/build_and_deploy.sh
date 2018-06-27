@@ -2,7 +2,7 @@
 
 ## build docker container
 IMAGE=mecab-server
-DATE=$(shell date +"%Y-%m-%d-%H%M%S")
+DATE=$(date +"%Y-%m-%d-%H%M%S")
 docker build . \
   -t $IMAGE:$DATE \
   -t $IMAGE:latest \
