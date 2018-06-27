@@ -1,0 +1,19 @@
+version: 2.0
+
+jobs:
+  build_and_deploy:
+    machine: true
+    steps:
+      - checkout
+      - run: chmod 777 ./.circleci/build_and_deploy.sh
+      - run: bash ./.circleci/build_and_deploy.sh
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build_and_deploy:
+        context: GCP
+        filters:
+          branches:
+            only: master

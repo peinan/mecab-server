@@ -1,5 +1,9 @@
 ### https://raw.github.com/github/gitignore/2bf7d8a77a73f7ef7089db449feafada0549af10/Python.gitignore
 
+# vim
+*.swp
+*.swo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
