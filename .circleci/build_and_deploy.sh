@@ -15,8 +15,8 @@ sudo $gcloud config set project $GCP_PROJECT_ID
 docker build . \
   -t $IMAGE:$DATE \
   -t $IMAGE:latest \
-  -t $GCR_URL/$GCP_PROJECT_ID/peinan/$IMAGE
+  -t $GCR_URL/$GCP_PROJECT_ID/peinan/$IMAGE:latest
 
 ## deploy to GCR and GAE
-sudo $gcloud app deploy
-sudo $gcloud app browse -s $IMAGE
+# sudo $gcloud app deploy
+# sudo $gcloud app browse -s $IMAGE
