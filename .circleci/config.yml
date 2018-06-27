@@ -7,7 +7,6 @@ jobs:
       - checkout
       - run: chmod 777 ./.circleci/build_and_deploy.sh
       - run: bash ./.circleci/build_and_deploy.sh
-
 workflows:
   version: 2
   build_and_deploy:
