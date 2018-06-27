@@ -8,7 +8,7 @@ gcloud=/opt/google-cloud-sdk/bin/gcloud
 ## set up gcp
 echo $ACCT_AUTH | base64 -d > $HOME/gcp-key.json
 sudo $gcloud components update
-sudo $gcloud auth activate-service-account --key-file $HOME/gcp-key,json
+sudo $gcloud auth activate-service-account --key-file $HOME/gcp-key.json
 sudo $gcloud config set project $GCP_PROJECT_ID
 
 # build
