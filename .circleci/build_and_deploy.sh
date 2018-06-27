@@ -21,5 +21,5 @@ docker build \
 
 ## deploy to GCR and GAE
 sudo $CMD_GCLOUD docker -- push $GCR_URL
-# sudo $CMD_GCLOUD app deploy
-# sudo $CMD_GCLOUD app browse -s $IMAGE
+sudo $CMD_GCLOUD app deploy
+sudo $CMD_GCLOUD app browse -s $IMAGE
